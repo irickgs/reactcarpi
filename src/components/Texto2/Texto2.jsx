@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Texto2 = () => {
     const [text, setText] = useState("");
@@ -7,6 +7,18 @@ const Texto2 = () => {
         console.log(e);
         setText(e.target.value);
     }
+
+    useEffect(() => {
+        console.log("Componente montado");
+        return () => {
+            console.log("Componente desmontado");
+        }  
+    }, []);
+    
+    useEffect(() => {
+        console.log("Componente actualizado");
+        
+    }, [text]);
 
 
     return (
