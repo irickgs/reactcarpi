@@ -1,4 +1,4 @@
-import ItemListContainer from "./components/ItemListContainer";
+import ItemListContainer from "./components3/ItemListContainer";
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <h1>que mira bobo</h1>
-      <ItemListContainer />
+      
     </div>
   );
 }
